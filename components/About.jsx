@@ -48,7 +48,7 @@ const qualificationData = [
       {
         company: "Incture Technologies",
         role: "Software Developer Intern",
-        years: "Feb 2025 to Current",
+        years: "August 2025 to Current",
       },
       {
         company: "Hosla",
@@ -179,7 +179,7 @@ const About = () => {
                                   </div>
                                 </div>
                               );
-                            }
+                            },
                           )}
                         </div>
                       </div>
@@ -213,7 +213,7 @@ const About = () => {
                                   </div>
                                 </div>
                               );
-                            }
+                            },
                           )}
                         </div>
                       </div>
@@ -238,7 +238,7 @@ const About = () => {
                           {getData(skillsData, "Language").data.map(
                             (skill, index) => (
                               <li key={index}>{skill}</li>
-                            )
+                            ),
                           )}
                         </ul>
                       </div>
@@ -253,7 +253,7 @@ const About = () => {
                           {getData(skillsData, "Tools").data.map(
                             (tool, index) => (
                               <li key={index}>{tool}</li>
-                            )
+                            ),
                           )}
                         </ul>
                       </div>
