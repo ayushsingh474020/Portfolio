@@ -133,7 +133,13 @@ const Work = () => {
       <div className="container mx-auto">
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
             <h2 className="section-title mb-4">Latest Projects</h2>
-            <p className="subtitle mb-8">Here are some of the projects I’ve recently worked on, showcasing my expertise in full-stack development, and modern web technologies. From building real-time chat applications and task management systems to creating video watching platforms, each project reflects my focus on crafting scalable, secure, and engaging user experiences.  
+            <p className="subtitle mb-8">
+  Here are some of the projects I’ve recently worked on, showcasing my experience in{" "}
+  <strong>full-stack development, backend engineering, AI-powered applications, and modern web technologies</strong>.
+  From building{" "}
+  <strong>AI-driven email automation and task management systems</strong> to real-time chat applications and
+  video-watching platforms, each project reflects my focus on building{" "}
+  <strong>scalable, secure, and practical software solutions</strong>.
 </p>
             <Link href="/projects">
                 <Button>All Projects</Button>
