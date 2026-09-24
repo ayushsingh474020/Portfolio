@@ -4,118 +4,160 @@ import {Tabs,TabsContent,TabsList,TabsTrigger} from "@/components/ui/tabs"
 import ProjectCard from "@/components/ProjectCard";
 
 const projectData=[
-  {
-      image:"/work/animax.png",
-      category:"JavaScript",
-      name:"Animax",
-      description: 'Animax is an innovative anime streaming platform I developed to deliver a seamless and engaging viewing experience for anime enthusiasts. It features secure user authentication with login, signup, password reset, OTP verification, OAuth2, and JWT-based security, ensuring a safe experience for all users. The platform offers a vast and frequently updated anime library with fullscreen mode and download options for offline viewing, while also allowing creators to upload and share their own anime content via Google Firebase. Users can personalize their experience by favoriting anime, receiving smart recommendations, and leveraging advanced search functionality by name, author, or tags. To enhance usability, Animax supports both light and dark modes for visual comfort. Built with React on the frontend, Node.js and Express on the backend, and MongoDB for database management, the platform leverages Redux for state handling, Material UI for modern design, and Google Firebase for secure cloud storage.',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/chat.png",
-      category:"JavaScript",
-      name:"Web Chat Application",
-      description: 'ChatApp is a real-time web chat application I developed to enable seamless and efficient communication. The platform supports secure authentication with JWT, ensuring user data protection and authorized access. It provides real-time text messaging powered by Socket.IO, complete with instant notifications for new messages, mentions, and group activities. Users can easily search for others, create and manage groups, and enjoy a clean, minimalist chat interface designed for usability. Built with React on the frontend, Node.js and Express on the backend, and Mongoose for database management, the app delivers a smooth and scalable chat experience. Planned future enhancements include video calling for richer communication and a light theme option to complement the existing dark mode. This project strengthened my expertise in real-time communication systems and reinforced my ability to design user-centric web applications.',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/3.png",
-      category:"NextJS",
-      name:"Portfolio",
-      description: 'I built my personal portfolio website using Next.js, with a strong focus on performance, responsiveness, and clean design. The user interface is crafted with shadcn/ui, giving it a modern and minimal look while ensuring accessibility across all devices. To make communication seamless, I integrated a mail feature that allows visitors to directly connect with me through the website. By leveraging Next.js features like server-side rendering and static site generation, the site delivers fast load times and a smooth browsing experience. This portfolio not only highlights my projects and skills but also reflects my ability to create scalable, user-friendly, and efficient web applications.',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/note.png",
-      category:"JavaScript",
-      name:"Note Keeper",
-      description: 'The Note Keeper App is a full-stack web application designed to simplify note-taking and task management. Built using the MERN stack with Chakra UI for a clean and responsive interface, it provides users with a seamless experience to create, update, and delete notes and tasks efficiently. The application features a secure authentication system to protect user data, along with an intelligent search functionality that allows quick retrieval of both notes and tasks. To enhance collaboration, users can share notes with others, while deadline notifications ensure important tasks are never missed. Additionally, a night mode option enhances usability by offering a comfortable viewing experience in low-light environments.',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/weather.png",
-      category:"JavaScript",
-      name:"Weather App",
-      description: 'The Weather App is a dynamic web application built using Node.js, Express, and EJS templates, integrated with a Weather API to deliver real-time weather updates. The app provides users with detailed weather parameters such as temperature, humidity, wind speed, and atmospheric conditions, along with a full-day forecast for better planning. Designed with clean visuals and an intuitive interface, it enhances the user experience by presenting weather data in an engaging and easy-to-understand format. By combining server-side rendering with EJS and the efficiency of Express, the application ensures fast performance and smooth navigation, making it both functional and visually appealing.',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/template.png",
-      category:"JavaScript",
-      name:"Portfolio template",
-      description: 'The Portfolio Template is a dynamic and customizable web application developed using Node.js, Express, and EJS templates, with MongoDB Atlas as the database for efficient data management. Designed to showcase personal or professional profiles, it features structured sections for projects, skills, and experience, all rendered seamlessly through server-side templating with EJS. The template includes mail support, enabling visitors to connect directly through an integrated contact form, ensuring smooth and secure communication. By leveraging MongoDB Atlas, the template allows easy storage and retrieval of user data, making it scalable and adaptable for different use cases. With its clean design, responsive layout, and robust backend integration, this portfolio template offers a solid foundation for building professional online portfolios.',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/3.png",
-      category:"Python",
-      name:"Amzon Price Alert",
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum eveniet voluptate totam modi sequi!',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/3.png",
-      category:"Python",
-      name:"Birthday Wisher",
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum eveniet voluptate totam modi sequi!',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/3.png",
-      category:"Python",
-      name:"Flash Card",
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum eveniet voluptate totam modi sequi!',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/3.png",
-      category:"Python",
-      name:"Flight Deals Notifier",
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum eveniet voluptate totam modi sequi!',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/3.png",
-      category:"Python",
-      name:"Pomodoro",
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum eveniet voluptate totam modi sequi!',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/3.png",
-      category:"Python",
-      name:"Snake Game",
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum eveniet voluptate totam modi sequi!',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/3.png",
-      category:"Python",
-      name:"Spotify Playlist",
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum eveniet voluptate totam modi sequi!',
-      link:"/",
-      github:"/"
-  },
-  {
-      image:"/work/3.png",
-      category:"Python",
-      name:"Turtle Racing Game",
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum eveniet voluptate totam modi sequi!',
-      link:"/",
-      github:"/"
-  }
+    {
+        image: "/work/Syncflow.jpeg",
+        category: "Java Springboot + React",
+        name: "SyncFlow",
+        description: (
+            <>
+                A full-stack <strong>AI-powered email and task management platform</strong> built with <strong>Java, Spring Boot, PostgreSQL, and React</strong>, designed to help users identify and organize important tasks and meetings from their emails.
+                <br /><br />
+                SyncFlow integrates with <strong>Gmail using OAuth 2.0 and Gmail APIs</strong> to securely connect email accounts, perform initial synchronization, and process new emails incrementally using <strong>Gmail History API and Google Pub/Sub</strong>. Incoming emails are processed asynchronously through background workers, with <strong>retry handling, failure management, and idempotent processing</strong> to ensure reliable synchronization.
+                <br /><br />
+                An <strong>LLM-powered classification pipeline using Groq</strong> analyzes emails and identifies whether they represent a <strong>task, meeting, or irrelevant message</strong>, extracting relevant information such as titles, senders, deadlines, and descriptions. The React frontend provides dedicated <strong>task, calendar, channel, and settings interfaces</strong> for managing the extracted information.
+                <br /><br />
+                <strong>Tech Stack:</strong> Java, Spring Boot, PostgreSQL, React, Tailwind CSS, Zustand, TanStack Query, Gmail API, Google OAuth 2.0, Google Pub/Sub, Groq, Redis, Docker
+            </>
+        ),
+        link: "https://www.linkedin.com/feed/update/urn:li:activity:7507131221534216193/",
+        github: "/"
+    },
+    {
+        image: "/work/animax.png",
+        category: "MERN",
+        name: "Animax",
+        description: (
+            <>
+                A full-stack <strong>anime streaming and content management platform</strong> built using the <strong>MERN stack</strong>, designed to provide users with an immersive platform for discovering, watching, and managing anime content.
+                <br /><br />
+                Animax features a comprehensive <strong>authentication system</strong> with JWT, OAuth2, OTP verification, secure login/signup, and password reset functionality. Users can browse an extensive anime library, <strong>search by title, author, or tags</strong>, watch episodes in fullscreen, and download content for offline viewing.
+                <br /><br />
+                The platform also allows authenticated users to <strong>upload anime content using Firebase Cloud Storage</strong>, maintain personalized <strong>favorite lists</strong>, and switch between <strong>light and dark themes</strong>. Redux is used for centralized state management, while Material UI provides a responsive and consistent interface.
+                <br /><br />
+                <strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB, Redux, Material UI, Firebase, JWT, OAuth2
+            </>
+        ),
+        link: "https://www.linkedin.com/feed/update/urn:li:activity:7217234464572104706/",
+        github: "https://github.com/ayushsingh474020/Animax_Backend"
+    },
+    {
+        image: "/work/chat.png",
+        category: "MERN",
+        name: "Web Chat Application",
+        description: (
+            <>
+                A full-stack <strong>real-time chat application</strong> built with <strong>React, Node.js, Express, MongoDB, and Socket.IO</strong>, designed to provide seamless and efficient communication through a clean and minimalist interface.
+                <br /><br />
+                The application features <strong>JWT-based authentication</strong> for secure access, along with <strong>real-time messaging</strong> and notifications for new messages, mentions, and group activities.
+                <br /><br />
+                Users can <strong>search for other users, start conversations, and create and manage group chats</strong>. <strong>Socket.IO</strong> enables real-time bidirectional communication, ensuring messages and chat activities are delivered instantly without requiring page refreshes.
+                <br /><br />
+                <strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB, Socket.IO, JWT
+            </>
+        ),
+        link: "/",
+        github: "/"
+    },
+    {
+        image: "/work/note.jpeg",
+        category: "MERN",
+        name: "Note Keeper",
+        description: (
+            <>
+                A full-stack note and task management application built using the <strong>MERN stack</strong> and <strong>Chakra UI</strong>, designed to help users organize notes, manage tasks, and stay on top of deadlines.
+                <br /><br />
+                The application provides <strong>secure user authentication</strong> with user-specific data management, along with complete <strong>CRUD functionality</strong> for creating, updating, and deleting notes and tasks.
+                <br /><br />
+                Note Keeper includes <strong>search functionality across notes and tasks</strong>, <strong>note sharing</strong> for collaboration, and <strong>deadline notifications</strong> to help users stay on schedule. It also features <strong>dark/night mode</strong> for a comfortable experience in low-light environments.
+                <br /><br />
+                <strong>Tech Stack:</strong> MongoDB, Express.js, React.js, Node.js, Chakra UI
+            </>
+        ),
+        link: "/",
+        github: "/",
+    },
+    {
+        image: "/work/Portfolio.jpeg",
+        category: "Next",
+        name: "Portfolio",
+        description: (
+            <>
+                A modern and responsive <strong>developer portfolio website</strong> built with <strong>Next.js</strong>, designed to showcase my technical skills, projects, experience, and development journey through a clean and interactive interface.
+                <br /><br />
+                The portfolio features dedicated sections for <strong>about, skills, experience, projects, and contact</strong>, with responsive layouts and smooth navigation optimized for different screen sizes and devices.
+                <br /><br />
+                It also includes a <strong>contact form</strong> that allows visitors and recruiters to directly send me messages for queries, opportunities, or collaboration. The project focuses on <strong>modern UI, responsive design, reusable components, and an engaging user experience</strong>.
+                <br /><br />
+                <strong>Tech Stack:</strong> Next.js, React.js, JavaScript, Tailwind CSS
+            </>
+        ),
+        link: "https://portfolio-henna-chi-89.vercel.app/",
+        github: "https://github.com/ayushsingh474020/Portfolio"
+    },
+    {
+        image: "/work/weather.png",
+        category: "EJS",
+        name: "Weather App",
+        description: (
+            <>
+                A responsive <strong>weather forecasting web application</strong> that provides users with real-time weather information for searched locations through a simple and intuitive interface.
+                <br /><br />
+                Users can <strong>search for locations</strong> and view essential weather details such as <strong>temperature, weather conditions, humidity, and other location-based information</strong>. The application integrates a <strong>weather API</strong> to fetch and display up-to-date weather data dynamically.
+                <br /><br />
+                Built with a server-side rendering approach, the project focuses on <strong>API integration, backend request handling, dynamic data rendering, and responsive UI design</strong>.
+                <br /><br />
+                <strong>Tech Stack:</strong> Node.js, Express.js, EJS, HTML, CSS, Weather API
+            </>
+        )
+    },
+    {
+        image: "/work/3.png",
+        category: "Python",
+        name: "Amazon Price Alert",
+        description: (
+            <>
+                A Python-based <strong>Amazon price tracking and alert system</strong> that monitors the price of a selected product and notifies the user when it drops below a predefined target price.
+                <br /><br />
+                The application uses <strong>web scraping</strong> to retrieve the current product price from Amazon, compares it against the user's <strong>target price threshold</strong>, and automatically sends an <strong>email notification</strong> when the desired price is reached.
+                <br /><br />
+                This project provided hands-on experience with <strong>web scraping, HTTP requests, HTML parsing, conditional logic, and automated email notifications</strong>, while demonstrating how Python can be used to automate practical everyday tasks.
+                <br /><br />
+                <strong>Tech Stack:</strong> Python, Requests, BeautifulSoup, SMTP, Amazon product data
+            </>
+        )
+    },
+    {
+        image: "/work/3.png",
+        category: "Python",
+        name: "Pomodoro Timer",
+        description: (
+            <>
+                A desktop-based <strong>Pomodoro productivity timer</strong> built with <strong>Python and Tkinter</strong>, designed to help users maintain focused work sessions using the Pomodoro technique.
+                <br /><br />
+                The application provides a <strong>graphical user interface</strong> with automated work and break intervals, including <strong>25-minute work sessions, short breaks, and longer breaks</strong>. The timer automatically transitions between sessions to maintain a structured productivity cycle.
+                <br /><br />
+                The project provided hands-on experience with <strong>Python GUI development, event-driven programming, timers, user interface components, and application state management</strong>.
+                <br /><br />
+                <strong>Tech Stack:</strong> Python, Tkinter
+            </>
+        )
+    },
+    {
+        image: "/work/3.png",
+        category: "Python",
+        name: "Spotify Playlist",
+        description: (
+            <>
+                A Python-based <strong>Spotify Musical Time Machine</strong> that creates a personalized playlist based on the <strong>Billboard Hot 100 songs from a selected date</strong>.
+                <br /><br />
+                Users provide a date, after which the application <strong>scrapes Billboard's Hot 100 chart</strong> to retrieve the top songs from that period. It then searches for the songs on Spotify and automatically <strong>creates and populates a Spotify playlist</strong> with the matching tracks.
+                <br /><br />
+                The project provided hands-on experience with <strong>web scraping, REST APIs, OAuth authentication, HTML parsing, and third-party API integration</strong>, connecting Billboard data with Spotify's platform through Python.
+                <br /><br />
+                <strong>Tech Stack:</strong> Python, BeautifulSoup, Requests, Spotipy, Spotify Web API
+            </>
+        )
+    }
 ]
 
 const uniqueCategories = [
