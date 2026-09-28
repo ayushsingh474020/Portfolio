@@ -9,11 +9,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <Hero/>
+      <Hero />
       <About />
       <Services />
       <Work />
-      <Reviews/>
+      {/* <Reviews/> */}
       <Cta />
     </main>
   );

@@ -21,11 +21,24 @@ const Hero = () => {
           </div>
           <h1 className="h1 mb-4">Hey there, Im Ayush Singh</h1>
           <p className="subtitle max-w-[760px] mx-auto xl:mx-0 ">
-          I’m an Associate Software Engineer with experience building backend systems and business applications using Java, Spring Boot, REST APIs, databases, and cloud-based services.
-          Over the past year, I’ve worked on backend workflows, integrations, scheduling, reporting, document management, and SAP-based systems. A big part of my work has been improving existing processes and building features that make these systems more efficient and reliable.
-          Outside of work, I’ve been building SyncFlow, an AI-powered email automation platform. It takes incoming emails and turns them into tasks and meetings. I’ve built the backend using Java, Spring Boot, PostgreSQL, Gmail APIs, Google Pub/Sub, OAuth 2.0, and asynchronous processing, along with a React frontend.
-          I’m open to Software Engineer and Backend Engineer opportunities where I can keep learning, take on meaningful engineering problems, and contribute to building good products.
-          I’m open to Software Engineer, Backend Engineer, and Full-Stack Engineer opportunities where I can keep learning, work on meaningful problems, and contribute across the stack.
+            I’m an Associate Software Engineer with experience building backend
+            systems and business applications using Java, Spring Boot, REST
+            APIs, databases, and cloud-based services. Over the past year, I’ve
+            worked on backend workflows, integrations, scheduling, reporting,
+            document management, and SAP-based systems. A big part of my work
+            has been improving existing processes and building features that
+            make these systems more efficient and reliable. Outside of work,
+            I’ve been building SyncFlow, an AI-powered email automation
+            platform. It takes incoming emails and turns them into tasks and
+            meetings. I’ve built the backend using Java, Spring Boot,
+            PostgreSQL, Gmail APIs, Google Pub/Sub, OAuth 2.0, and asynchronous
+            processing, along with a React frontend. I’m open to Software
+            Engineer and Backend Engineer opportunities where I can keep
+            learning, take on meaningful engineering problems, and contribute to
+            building good products. I’m open to Software Engineer, Backend
+            Engineer, and Full-Stack Engineer opportunities where I can keep
+            learning, work on meaningful problems, and contribute across the
+            stack.
           </p>
           <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
             <Link href="/contact">
@@ -33,11 +46,19 @@ const Hero = () => {
                 Contact me <Send size={18} />{" "}
               </Button>
             </Link>
-            <Link href="/contact">
+            {/* <Link href="/contact">
               <Button className="gap-x-2" variant="secondary">
                 Download CV <Download size={18} />{" "}
               </Button>
-            </Link>
+            </Link> */}
+            <Button className="gap-x-2" variant="secondary" asChild>
+              <a
+                href="/Ayush_Singh_Resume.pdf"
+                download="Ayush_Singh_Resume.pdf"
+              >
+                Download CV <Download size={18} />
+              </a>
+            </Button>
           </div>
           <Socials
             containerStyles="flex gap-x-6 mx-auto xl:mx-0"
